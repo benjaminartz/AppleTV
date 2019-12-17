@@ -1,0 +1,39 @@
+.list-item {
+  display: inline-block;
+  width: 165px;
+  height: 230px;
+  overflow: hidden;
+  border: 1px solid black;
+  position: relative;
+  margin: 5px;
+}
+
+.list-item .title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,.4);
+  color: white;
+  padding: 3px;
+}
+
+.list-item .actionButton {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  visibility: hidden;
+  border: 0;
+  background-color: rgba(50,50,50,.4);
+  cursor: pointer;
+  color: white;
+  padding: 3px;
+}
+
+.list-item:hover .actionButton {
+  visibility: visible;
+}
+
+.list-item:hover .actionButton:hover {
+  background-color: rgba(50,50,50,.6);
+}
